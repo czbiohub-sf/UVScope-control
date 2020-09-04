@@ -1,0 +1,13 @@
+{
+"285nm_BF":{"name":"285nm_BF", "objectiveName": "Zeiss 100x/0.85","cameraName":"PCO.Ultraviolet",
+"fluoCube": "None", "apertureTLA": 3, "exposure_ms":5.5,"binning":"2","LED":"M285L4","percentPower":100},
+
+"M565F3":{"name":"OrangeTrans", "objectiveName": "Zeiss 100x/0.85","cameraName":"PCO.Ultraviolet",
+"fluoCube": "None", "apertureTLA": 3,"exposure_ms":1,"binning":"2","LED":"M565F3","percentPower":15},
+
+"365nm_BF":{"name":"365nm_BF", "objectiveName": "Zeiss 100x/0.85","cameraName":"PCO.Ultraviolet",
+"fluoCube": "None", "apertureTLA": 3,"exposure_ms":13.5,"binning":"2","LED":"M365FP1","percentPower":100},
+
+"405nm_BF":{"name":"405nm_BF", "objectiveName": "Zeiss 100x/0.85","cameraName":"PCO.Ultraviolet",
+"fluoCube": "None", "apertureTLA": 3,"exposure_ms":7,"binning":"2","LED":"M405FP1","percentPower":100}
+}
