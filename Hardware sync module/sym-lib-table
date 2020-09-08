@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name syncModule-cache)(type Legacy)(uri ${KIPRJMOD}/syncModule-cache.lib)(options "")(descr ""))
+  (lib (name syncModule-rescue)(type Legacy)(uri ${KIPRJMOD}/syncModule-rescue.lib)(options "")(descr ""))
+)

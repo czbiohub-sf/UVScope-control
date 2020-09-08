@@ -1,0 +1,290 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 7874 5906
+encoding utf-8
+Sheet 1 1
+Title "Hardware sync module"
+Date ""
+Rev ""
+Comp "czbiohub"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L syncModule-rescue:SW_SPDT-syncModule-rescue SW1
+U 1 1 5C19477D
+P 4875 3275
+F 0 "SW1" H 4875 3445 50  0000 C CNN
+F 1 "SW_SPDT" H 4875 3075 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MicroLatch-53253-0370_03x2.00mm_Straight" H 4875 3275 50  0001 C CNN
+F 3 "" H 4875 3275 50  0001 C CNN
+	1    4875 3275
+	-1   0    0    1   
+$EndComp
+$Comp
+L syncModule-rescue:Conn_Coaxial-syncModule-rescue ExposureIn1
+U 1 1 5C194811
+P 2875 1575
+F 0 "ExposureIn1" H 2800 1700 50  0000 C CNN
+F 1 "Conn_Coaxial" H 2800 1775 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MicroLatch-53253-0270_02x2.00mm_Straight" H 2875 1575 50  0001 C CNN
+F 3 "" H 2875 1575 50  0001 C CNN
+	1    2875 1575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L syncModule-rescue:Conn_Coaxial-syncModule-rescue Vout1
+U 1 1 5C194862
+P 3700 1575
+F 0 "Vout1" H 3725 1725 50  0000 C CNN
+F 1 "Conn_Coaxial" H 3600 1800 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MicroLatch-53253-0270_02x2.00mm_Straight" H 3700 1575 50  0001 C CNN
+F 3 "" H 3700 1575 50  0001 C CNN
+	1    3700 1575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L syncModule-rescue:Conn_Coaxial-syncModule-rescue AnalogIn1
+U 1 1 5C194967
+P 2125 1575
+F 0 "AnalogIn1" H 2135 1695 50  0000 C CNN
+F 1 "Conn_Coaxial" H 2075 1775 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MicroLatch-53253-0270_02x2.00mm_Straight" H 2125 1575 50  0001 C CNN
+F 3 "" H 2125 1575 50  0001 C CNN
+	1    2125 1575
+	-1   0    0    -1  
+$EndComp
+$Comp
+L syncModule-rescue:Conn_01x02-syncModule-rescue J1
+U 1 1 5C48C23C
+P 4925 1650
+F 0 "J1" H 4925 1750 50  0000 C CNN
+F 1 "Conn_01x02" H 4925 1450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MicroLatch-53253-0270_02x2.00mm_Straight" H 4925 1650 50  0001 C CNN
+F 3 "" H 4925 1650 50  0001 C CNN
+	1    4925 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5C48C2CD
+P 4675 1900
+F 0 "#PWR03" H 4675 1650 50  0001 C CNN
+F 1 "GND" H 4675 1750 50  0000 C CNN
+F 2 "" H 4675 1900 50  0001 C CNN
+F 3 "" H 4675 1900 50  0001 C CNN
+	1    4675 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4725 1750 4675 1750
+Wire Wire Line
+	4675 1750 4675 1900
+$Comp
+L power:+12V #PWR04
+U 1 1 5C48C31D
+P 4675 1500
+F 0 "#PWR04" H 4675 1350 50  0001 C CNN
+F 1 "+12V" H 4675 1640 50  0000 C CNN
+F 2 "" H 4675 1500 50  0001 C CNN
+F 3 "" H 4675 1500 50  0001 C CNN
+	1    4675 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 1500 4675 1650
+Wire Wire Line
+	4675 1650 4725 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5F56D37B
+P 2125 1825
+F 0 "#PWR?" H 2125 1575 50  0001 C CNN
+F 1 "GND" H 2125 1675 50  0000 C CNN
+F 2 "" H 2125 1825 50  0001 C CNN
+F 3 "" H 2125 1825 50  0001 C CNN
+	1    2125 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2125 1825 2125 1775
+Text Label 2350 1575 0    50   ~ 0
+AIN
+Wire Wire Line
+	2350 1575 2275 1575
+Text Label 3950 1575 0    50   ~ 0
+VOUT
+Wire Wire Line
+	3950 1575 3850 1575
+$Comp
+L power:GND #PWR?
+U 1 1 5F5723EF
+P 3700 1850
+F 0 "#PWR?" H 3700 1600 50  0001 C CNN
+F 1 "GND" H 3700 1700 50  0000 C CNN
+F 2 "" H 3700 1850 50  0001 C CNN
+F 3 "" H 3700 1850 50  0001 C CNN
+	1    3700 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1850 3700 1775
+Text Label 4625 3175 2    50   ~ 0
+AIN
+Wire Wire Line
+	4625 3175 4675 3175
+$Comp
+L power:GND #PWR?
+U 1 1 5F578B57
+P 2875 1850
+F 0 "#PWR?" H 2875 1600 50  0001 C CNN
+F 1 "GND" H 2875 1700 50  0000 C CNN
+F 2 "" H 2875 1850 50  0001 C CNN
+F 3 "" H 2875 1850 50  0001 C CNN
+	1    2875 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 1850 2875 1775
+Text Label 3125 1575 0    50   ~ 0
+EXP_IN
+Wire Wire Line
+	3125 1575 3025 1575
+Text Notes 2175 1175 0    79   ~ 16
+Coax I/O
+Text Label 5100 3275 0    50   ~ 0
+VOUT
+Wire Wire Line
+	5100 3275 5075 3275
+Text Notes 4525 1150 0    79   ~ 16
+Power In
+Wire Notes Line
+	1850 950  5425 950 
+Wire Notes Line
+	1850 2225 5425 2225
+Text Label 4625 3375 2    50   ~ 0
+SWOUT
+Wire Wire Line
+	4625 3375 4675 3375
+Wire Notes Line
+	4275 950  4275 3700
+Wire Notes Line
+	1850 950  1850 3700
+Wire Notes Line
+	5425 950  5425 3700
+Wire Notes Line
+	1850 3700 5425 3700
+Text Notes 2200 2500 0    79   ~ 16
+Analog switch
+Text Notes 4400 2625 0    79   ~ 16
+Passthrough \nSwitch
+Wire Wire Line
+	3500 3150 3400 3150
+Text Label 3500 3150 0    50   ~ 0
+SWOUT
+Connection ~ 3450 2750
+Wire Wire Line
+	3450 2900 3450 2750
+Wire Wire Line
+	3150 2900 3450 2900
+Wire Wire Line
+	3050 2750 3050 2900
+$Comp
+L syncModule-rescue:DG419-syncModule-rescue U1
+U 1 1 5C194554
+P 3100 3150
+F 0 "U1" H 3200 3050 50  0000 L CNN
+F 1 "DG419" H 3200 3250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 3100 3150 60  0001 C CNN
+F 3 "" H 3100 3150 60  0001 C CNN
+	1    3100 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2750 3100 2750
+Wire Wire Line
+	3450 2750 3400 2750
+Wire Wire Line
+	3450 2650 3450 2750
+$Comp
+L power:+12V #PWR?
+U 1 1 5F58E752
+P 3450 2650
+F 0 "#PWR?" H 3450 2500 50  0001 C CNN
+F 1 "+12V" H 3450 2790 50  0000 C CNN
+F 2 "" H 3450 2650 50  0001 C CNN
+F 3 "" H 3450 2650 50  0001 C CNN
+	1    3450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C194E83
+P 3250 2750
+F 0 "R1" V 3330 2750 50  0000 C CNN
+F 1 "R" V 3250 2750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 3180 2750 50  0001 C CNN
+F 3 "" H 3250 2750 50  0001 C CNN
+	1    3250 2750
+	0    -1   -1   0   
+$EndComp
+Text Label 2800 3200 2    50   ~ 0
+AIN
+Connection ~ 3050 3400
+Wire Wire Line
+	3050 3400 3050 3475
+Text Label 3500 3300 0    50   ~ 0
+EXP_IN
+Wire Wire Line
+	3150 3400 3050 3400
+$Comp
+L power:GND #PWR01
+U 1 1 5C1946A4
+P 3050 3475
+F 0 "#PWR01" H 3050 3225 50  0001 C CNN
+F 1 "GND" H 3050 3325 50  0000 C CNN
+F 2 "" H 3050 3475 50  0001 C CNN
+F 3 "" H 3050 3475 50  0001 C CNN
+	1    3050 3475
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 2750
+Wire Wire Line
+	3000 2750 3050 2750
+$Comp
+L Device:R R2
+U 1 1 5C194F56
+P 2850 2750
+F 0 "R2" V 2930 2750 50  0000 C CNN
+F 1 "R" V 2850 2750 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2780 2750 50  0001 C CNN
+F 3 "" H 2850 2750 50  0001 C CNN
+	1    2850 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2575 2750 2700 2750
+Wire Wire Line
+	2575 3100 2575 2750
+Wire Wire Line
+	3400 3300 3500 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5F586BD2
+P 2575 3225
+F 0 "#PWR?" H 2575 2975 50  0001 C CNN
+F 1 "GND" H 2575 3075 50  0000 C CNN
+F 2 "" H 2575 3225 50  0001 C CNN
+F 3 "" H 2575 3225 50  0001 C CNN
+	1    2575 3225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3100 2575 3100
+Wire Wire Line
+	2575 3100 2575 3225
+Connection ~ 2575 3100
+$EndSCHEMATC
