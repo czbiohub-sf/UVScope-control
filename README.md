@@ -6,6 +6,8 @@ Thanks for visiting UVScope-control! Feel free to comment and make PRs in a cons
 
 UVScope-control was written to control a custom ultraviolet microscope built at Chan Zuckerberg Biohub, but could be adapted to control other microscopes by replacing device-specific hardware drivers. The microscope has a main control class, but works together with other modules to control a camera, XY stage, focus stage, and multiplexed LEDs with hardware sync module. A multi-dimensional image storage and processing class, MDImage, ingests images from the microscope, saving them to disk and/or memory in real time, in a format that can easily be re-loaded later into memory. MDImage also has a 6D image viewer built-in for quickly browsing image data.
 
+Link to our published manuscript: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009257
+
 ## Modules
 
 ### UVScope
